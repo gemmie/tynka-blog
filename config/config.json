@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Bookworm Next | Personal Blog Theme",
+    "title": "Tynka",
     "base_url": "/tynka-blog/",
     "favicon": "/tynka-blog/images/favicon.png",
     "logo": "/tynka-blog/images/logo.png",
@@ -10,7 +10,7 @@
   },
 
   "settings": {
-    "pagination": 3,
+    "pagination": 5,
     "summary_length": 200,
     "blog_folder": "posts"
   },

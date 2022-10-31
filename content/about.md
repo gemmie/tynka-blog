@@ -1,7 +1,7 @@
 ---
-title: "I’m John Doe, A content writer based in LDN, currently at Bookworm"
+title: "I’m Kat Tynka, A software engineer based in Kraków."
 meta_title: "About"
-image: "/images/author.jpg"
+image: "/tynka-blog/images/author.jpg"
 layout: "about"
 draft: false
 
@@ -12,6 +12,6 @@ social:
   instagram: "https://www.instagram.com"
 ---
 
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget.
+Software Engineer working mailny with TypeScript :)
 
 Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.
