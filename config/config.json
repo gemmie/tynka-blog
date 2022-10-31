@@ -2,8 +2,8 @@
   "site": {
     "title": "Bookworm Next | Personal Blog Theme",
     "base_url": "/tynka-blog/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/tynka-blog/images/favicon.png",
+    "logo": "/tynka-blog/images/logo.png",
     "logo_width": "200",
     "logo_height": "34",
     "logo_text": "Bookworm Light"
@@ -22,7 +22,7 @@
 
   "metadata": {
     "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/tynka-blog/images/og-image.png",
     "meta_description": "Next Boilerplate"
   }
 }
