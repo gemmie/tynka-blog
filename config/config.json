@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Bookworm Next | Personal Blog Theme",
-    "base_url": "/",
+    "base_url": "/tynka-blog/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
