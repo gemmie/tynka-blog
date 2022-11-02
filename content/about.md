@@ -1,16 +1,14 @@
 ---
-title: "I’m Kat Tynka, A software engineer based in Kraków."
+title: "Kat Tynka,"
 meta_title: "About"
-image: "/tynka-blog/images/author.jpg"
+image: "/tynka-blog/images/tynka.jpeg"
 layout: "about"
 draft: false
 
 # social sites
 social:
-  facebook: "https://www.facebook.com"
-  twitter: "https://www.twitter.com"
-  instagram: "https://www.instagram.com"
+  linkedin: "https://www.linkedin.com/in/tynka-kat/"
 ---
 
-Software Engineer working mailny with TypeScript :)
+Software Engineer working mainly with TypeScript :)
 

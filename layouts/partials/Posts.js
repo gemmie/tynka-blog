@@ -34,7 +34,7 @@ const Posts = ({ posts, authors, className }) => {
                 )
                 .map((author, i) => (
                   <Link
-                    href={`/authors/${slugify(author.frontmatter.title)}`}
+                    href={`/about`}
                     key={`author-${i}`}
                     passHref
                   >

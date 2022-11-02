@@ -15,8 +15,8 @@ const About = ({ data }) => {
           <div className="img-cover mb-8">
             <Image
               src={image}
-              width={920}
-              height={515}
+              width={500}
+              height={500}
               alt={title}
               className="rounded-lg"
             />

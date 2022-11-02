@@ -20,7 +20,7 @@ const Authors = ({ authors }) => {
             </div>
           )}
           <h3 className="h4 mb-2">
-            <Link href={`/authors/${author.slug}`} passHref>
+            <Link href={`/about`} passHref>
               <a className="block hover:text-primary">
                 {author.frontmatter.title}
               </a>
