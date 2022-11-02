@@ -1,5 +1,5 @@
 ---
-title: "How to make toys from old Olarpaper"
+title: "Some things about cache"
 description: "meta description"
 date: 2022-11-02T05:00:00Z
 image: "/tynka-blog/images/posts/01.jpg"
@@ -8,6 +8,8 @@ authors: ["Kat Tynka"]
 tags: ["cache", "redis", "fastly"]
 draft: false
 ---
+
+Some stuff about cache.
 
 # Cache
 
