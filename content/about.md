@@ -14,4 +14,3 @@ social:
 
 Software Engineer working mailny with TypeScript :)
 
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.

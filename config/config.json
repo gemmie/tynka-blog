@@ -1,11 +1,11 @@
 {
   "site": {
-    "title": "Tynka",
-    "base_url": "/tynka-blog/",
+    "title": "tynka's blog",
+    "base_url": "/",
     "favicon": "/tynka-blog/images/favicon.png",
     "logo": "/tynka-blog/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "34",
+    "logo_width": "150",
+    "logo_height": "62",
     "logo_text": "Bookworm Light"
   },
 
