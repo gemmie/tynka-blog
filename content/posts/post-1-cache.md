@@ -59,11 +59,11 @@ This helps reduce transferred data size.
 There are a few headers commonly used in caching: 
 
 * `Cache-Control` - holds instructions - in both requests and responses that control caching in browsers and shared caches (eg. Proxies, CDNs). Response instructions:
-  * `max-age=N` - indicates that the response remains fresh until N seconds after the response is generated. Tells cache that it can store the response and reuse it as long as it's fresh.
+  * `private` - response can be stored only in private caches.
+  * `max-age=N` - response remains fresh until N seconds after the response is generated. Tells cache that it can store the response and reuse it as long as it's fresh.
   * `no-cache` - means that the response can be stored in cache, but it must be validated with the origin server before each reuse. It does not mean `don't store`.
   * `must-revalidate` - response can be stored in cache and reused while fresh, but should validate with server if stale.
   * `no-store` - cache should not be stored for this response.
-  * `private` - response can be stored only in private caches.
 * `Etag` - entity tag, response header, an identifier for a specific resource - if the response for a URL has changes, a new ETag value must be generated.
 * `Vary` - describes the parts of the request message aside from method and URL that influenced the content of the response. It takes comma separated header names as directives.
 
@@ -76,7 +76,7 @@ Shared cache also works with HTTP headers. Setting the `Cache-Control` header to
 
 #### So what exactly is a CDN? 
 
-**Content Delivery Network (CDN)**  is a geographically distributed servers, which work together to provide fast delivery of Internet content. It does not host content, but helps to cache content oat the network edge, which improves website performance.
+**Content Delivery Network (CDN)**  is a group of geographically distributed servers, which work together to provide fast delivery of Internet content. It does not host content, but helps to cache content oat the network edge, which improves website performance.
 
 CDN pulls static content files from the origin server into the distributed CDN networks. Some CDNs have features allowing for selective caching of dynamic content.
 
