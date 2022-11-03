@@ -26,7 +26,6 @@ Cache invalidation is a process where a system marks cached entries as invalid a
 
 There are three approaches to cache invalidation:
 1. **Write-through cache**
-<img src="/tynka-blog/images/posts/cache/write-through-cache.png"/>
 2. **Write-around cache**
 3. **Write-back cache**
 
@@ -84,7 +83,7 @@ CDN pulls static content files from the origin server into the distributed CDN n
 
 Examples of CDN are CloudFront from AWS and Cloud CDN from Google.
 
-#### Why CDN is good?
+#### Why use CDN?
 
 * Improves latency:
   * **reduces physical distance**,
@@ -100,9 +99,23 @@ Examples of CDN are CloudFront from AWS and Cloud CDN from Google.
 
 
 
-### Varnish, Fastly
-HTTP accelerator
-#### surrogate key
+#### Examples
+
+###### Varnish
+**Varnish** is a caching HTTP **reverse proxy**. It can be used in front of a server and configured to cache the content. It's highly configurable, offering its own language.
+
+After receiving a request, Varnish can decide to look for an answer in the cache, and like other caching systems does not bother backend, when the data is there. Cache hits in Varnish can take less than a millisecond to deliver.
+
+Varnish understands the `Cache-Control` HTTP header, but in the end Varnish configuration decides about what and how long to cache, it also allows to send different `Cache-Control` header to the clients.
+
+###### Fastly
+**Fastly** is a CDN, built on top of Varnish. It allows to cache event-driven content and programmatic purges, when content changes.
+
+
+Fastly offers an alternative to `Cache-Control` response header, called `Surrogate-Control`. It is proprietary to Fastly and works in a similar way to `Cache-Control`.
+If both are available, Fastly will prefer `Surrogate-Control`.
+Another HTTP header proprietary to Fastly is `Surrogate-Key`. When a server response has this header, Fastly indexes the response against the specific key, in addition to the regular cache key.
+Surrogate keys cannot be used to find and serve content, but they allow to purge the content associated with them. Purging with a surrogate key will purge all pages associated with a key.
 
 ### Redis and the like
 Redis is a key-value store, that can be used as an in-memory cache working *in front of* the server.
