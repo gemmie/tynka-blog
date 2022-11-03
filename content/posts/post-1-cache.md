@@ -26,6 +26,7 @@ Cache invalidation is a process where a system marks cached entries as invalid a
 
 There are three approaches to cache invalidation:
 1. **Write-through cache**
+<img src="/tynka-blog/images/posts/cache/write-through-cache.png">
 2. **Write-around cache**
 3. **Write-back cache**
 
@@ -76,19 +77,22 @@ Shared cache also works with HTTP headers. Setting the `Cache-Control` header to
 
 #### So what exactly is a CDN? 
 
-**Content Delivery Network (CDN)**  is a group of geographically distributed servers, which work together to provide fast delivery of Internet content. It does not host content, but helps to cache content oat the network edge, which improves website performance.
+**Content Delivery Network (CDN)**  is a group of geographically distributed servers, which work together to provide fast delivery of Internet content. It does not host content, but helps to cache content at the network edge, which improves website performance.
 
 CDN pulls static content files from the origin server into the distributed CDN networks. Some CDNs have features allowing for selective caching of dynamic content.
+
+
+Examples of CDN are CloudFront from AWS and Cloud CDN from Google.
 
 #### Why CDN is good?
 
 * Improves latency:
   * **reduces physical distance**,
-  * **hardware/software optimization** - SSD drives, load balancing
+  * **hardware/software optimization** - SSD drives, load balancing,
   * **reduced data transfer** - minification, file compression.
 * Improves reliability and redundancy:
-  * **load balancing**
-  * **intelligent failover**
+  * **load balancing**,
+  * **intelligent failover** - uninterrupted service even if some servers go offline, traffic is redistributed,
   * **anycast routing** - if an entire data server is having technical issues, anycast transfers the traffic to another available data center.
 * Protects data security:
   * CDN can keep a site secured with TLS/SSL.
