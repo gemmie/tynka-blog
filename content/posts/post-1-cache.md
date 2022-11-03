@@ -26,7 +26,7 @@ Cache invalidation is a process where a system marks cached entries as invalid a
 
 There are three approaches to cache invalidation:
 1. **Write-through cache**
-<img src="/tynka-blog/images/posts/cache/write-through-cache.png">
+<img src="/tynka-blog/images/posts/cache/write-through-cache.png"/>
 2. **Write-around cache**
 3. **Write-back cache**
 
