@@ -101,19 +101,20 @@ Examples of CDN are CloudFront from AWS and Cloud CDN from Google.
 
 #### Examples
 
-###### Varnish
+##### Varnish
 **Varnish** is a caching HTTP **reverse proxy**. It can be used in front of a server and configured to cache the content. It's highly configurable, offering its own language.
 
 After receiving a request, Varnish can decide to look for an answer in the cache, and like other caching systems does not bother backend, when the data is there. Cache hits in Varnish can take less than a millisecond to deliver.
 
 Varnish understands the `Cache-Control` HTTP header, but in the end Varnish configuration decides about what and how long to cache, it also allows to send different `Cache-Control` header to the clients.
 
-###### Fastly
+##### Fastly
 **Fastly** is a CDN, built on top of Varnish. It allows to cache event-driven content and programmatic purges, when content changes.
 
 
 Fastly offers an alternative to `Cache-Control` response header, called `Surrogate-Control`. It is proprietary to Fastly and works in a similar way to `Cache-Control`.
 If both are available, Fastly will prefer `Surrogate-Control`.
+
 Another HTTP header proprietary to Fastly is `Surrogate-Key`. When a server response has this header, Fastly indexes the response against the specific key, in addition to the regular cache key.
 Surrogate keys cannot be used to find and serve content, but they allow to purge the content associated with them. Purging with a surrogate key will purge all pages associated with a key.
 
